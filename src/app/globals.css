@@ -2,26 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+h1{
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.my{
+  color: black;
+  -webkit-text-fill-color: rgb(10, 6, 6); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 1px rgb(235, 225, 225);
 }
